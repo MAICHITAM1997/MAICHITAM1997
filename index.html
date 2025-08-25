@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Inter Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f3f4f6;
+            color: #1f2937;
+        }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+
+    <!-- Language Switcher -->
+    <div class="fixed top-4 right-4 z-50">
+        <button id="language-switcher" class="flex items-center space-x-2 p-2 rounded-full bg-white shadow-lg transition duration-300 hover:scale-105">
+            <i class="fas fa-globe text-gray-600"></i>
+            <span id="lang-text" class="text-sm font-medium text-gray-600">VI</span>
+        </button>
+    </div>
+
+    <!-- Header Section -->
+    <header class="bg-white shadow-md rounded-b-3xl py-6 px-4 sm:px-6 lg:px-8">
+        <div class="container mx-auto flex justify-between items-center">
+            <div class="text-3xl font-bold text-gray-800">
+                <a href="#home">Trang cá nhân</a>
+            </div>
+            <nav class="space-x-4 hidden sm:flex">
+                <a href="#about" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Giới thiệu</a>
+                <a href="#projects" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Dự án</a>
+                <a href="#contact" class="text-gray-600 hover:text-gray-900 transition duration-300 font-medium">Liên hệ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="container mx-auto flex-grow p-4 sm:p-8 lg:p-12 mt-8">
+        
+        <!-- About Section -->
+        <section id="about" class="bg-white p-8 rounded-2xl shadow-lg mb-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Giới thiệu</h2>
+            <div class="flex flex-col md:flex-row items-center md:space-x-8">
+                <div class="w-48 h-48 rounded-full overflow-hidden mb-6 md:mb-0 shadow-lg">
+                    <!-- Placeholder image -->
+                    <img src="https://placehold.co/192x192/E5E7EB/4B5563?text=Ảnh+cá+nhân" alt="Ảnh cá nhân" class="w-full h-full object-cover">
+                </div>
+                <div class="text-center md:text-left">
+                    <h3 class="text-2xl font-semibold text-gray-800 mb-2">Tên của bạn</h3>
+                    <p class="text-gray-600 mb-4">Chức danh / Nghề nghiệp</p>
+                    <p class="text-gray-700 leading-relaxed">
+                        Chào mừng đến với trang web của tôi! Tôi là một nhà phát triển phần mềm với đam mê tạo ra các giải pháp sáng tạo và hiệu quả. Tôi chuyên về phát triển web front-end và back-end. Tôi tin rằng việc học hỏi không ngừng là chìa khóa để phát triển.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="bg-white p-8 rounded-2xl shadow-lg mb-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Dự án</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition duration-300 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Dự án 1</h3>
+                    <p class="text-gray-600 mb-4">Mô tả ngắn về dự án 1. Đây là nơi bạn có thể giới thiệu về các kỹ năng của mình.</p>
+                    <a href="#" class="text-blue-500 hover:text-blue-700 transition duration-300 font-medium">Xem chi tiết &rarr;</a>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition duration-300 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Dự án 2</h3>
+                    <p class="text-gray-600 mb-4">Mô tả ngắn về dự án 2. Đây là nơi bạn có thể giới thiệu về các kỹ năng của mình.</p>
+                    <a href="#" class="text-blue-500 hover:text-blue-700 transition duration-300 font-medium">Xem chi tiết &rarr;</a>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-gray-50 p-6 rounded-xl shadow-md transition duration-300 hover:shadow-xl">
+                    <h3 class="text-xl font-semibold text-gray-800 mb-2">Dự án 3</h3>
+                    <p class="text-gray-600 mb-4">Mô tả ngắn về dự án 3. Đây là nơi bạn có thể giới thiệu về các kỹ năng của mình.</p>
+                    <a href="#" class="text-blue-500 hover:text-blue-700 transition duration-300 font-medium">Xem chi tiết &rarr;</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="bg-white p-8 rounded-2xl shadow-lg mb-8">
+            <h2 class="text-4xl font-bold text-gray-800 mb-6">Liên hệ</h2>
+            <p class="text-gray-700 mb-6">Nếu bạn muốn kết nối, xin vui lòng liên hệ với tôi qua email hoặc mạng xã hội.</p>
+            <div class="flex flex-col sm:flex-row sm:space-x-4 space-y-4 sm:space-y-0">
+                <a href="mailto:your.email@example.com" class="flex items-center justify-center space-x-2 p-4 rounded-xl bg-blue-500 text-white font-medium shadow-md hover:bg-blue-600 transition duration-300">
+                    <i class="fas fa-envelope"></i>
+                    <span>Email</span>
+                </a>
+                <a href="#" class="flex items-center justify-center space-x-2 p-4 rounded-xl bg-gray-700 text-white font-medium shadow-md hover:bg-gray-800 transition duration-300">
+                    <i class="fab fa-linkedin"></i>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="#" class="flex items-center justify-center space-x-2 p-4 rounded-xl bg-gray-800 text-white font-medium shadow-md hover:bg-gray-900 transition duration-300">
+                    <i class="fab fa-github"></i>
+                    <span>GitHub</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-4 mt-auto rounded-t-3xl text-center">
+        <p>&copy; 2024 Trang cá nhân của bạn. Mọi quyền được bảo lưu.</p>
+    </footer>
+
+    <!-- JavaScript for Language Switcher -->
+    <script>
+        const translations = {
+            en: {
+                title: "Personal Portfolio",
+                home: "Personal Website",
+                about: "About",
+                projects: "Projects",
+                contact: "Contact",
+                aboutTitle: "About Me",
+                name: "Your Name",
+                jobTitle: "Your Title / Profession",
+                aboutText: "Welcome to my website! I'm a software developer with a passion for building creative and effective solutions. I specialize in both front-end and back-end web development. I believe that continuous learning is key to growth.",
+                projectsTitle: "Projects",
+                project1Title: "Project 1",
+                project1Desc: "A brief description of Project 1. This is where you can showcase your skills.",
+                project2Title: "Project 2",
+                project2Desc: "A brief description of Project 2. This is where you can showcase your skills.",
+                project3Title: "Project 3",
+                project3Desc: "A brief description of Project 3. This is where you can showcase your skills.",
+                viewDetails: "View Details &rarr;",
+                contactTitle: "Contact",
+                contactText: "If you'd like to connect, please feel free to reach out to me via email or social media.",
+                email: "Email",
+                footer: "© 2024 Your Personal Website. All Rights Reserved.",
+            },
+            vi: {
+                title: "Trang cá nhân",
+                home: "Trang cá nhân",
+                about: "Giới thiệu",
+                projects: "Dự án",
+                contact: "Liên hệ",
+                aboutTitle: "Giới thiệu",
+                name: "Tên của bạn",
+                jobTitle: "Chức danh / Nghề nghiệp",
+                aboutText: "Chào mừng đến với trang web của tôi! Tôi là một nhà phát triển phần mềm với đam mê tạo ra các giải pháp sáng tạo và hiệu quả. Tôi chuyên về phát triển web front-end và back-end. Tôi tin rằng việc học hỏi không ngừng là chìa khóa để phát triển.",
+                projectsTitle: "Dự án",
+                project1Title: "Dự án 1",
+                project1Desc: "Mô tả ngắn về dự án 1. Đây là nơi bạn có thể giới thiệu về các kỹ năng của mình.",
+                project2Title: "Dự án 2",
+                project2Desc: "Mô tả ngắn về dự án 2. Đây là nơi bạn có thể giới thiệu về các kỹ năng của mình.",
+                project3Title: "Dự án 3",
+                project3Desc: "Mô tả ngắn về dự án 3. Đây là nơi bạn có thể giới thiệu về các kỹ năng của mình.",
+                viewDetails: "Xem chi tiết &rarr;",
+                contactTitle: "Liên hệ",
+                contactText: "Nếu bạn muốn kết nối, xin vui lòng liên hệ với tôi qua email hoặc mạng xã hội.",
+                email: "Email",
+                footer: "© 2024 Trang cá nhân của bạn. Mọi quyền được bảo lưu.",
+            }
+        };
+
+        const langSwitcher = document.getElementById('language-switcher');
+        const langText = document.getElementById('lang-text');
+        let currentLang = 'en';
+
+        // Get all elements with a data-key attribute for translation
+        const elementsToTranslate = document.querySelectorAll('[data-key]');
+        
+        function updateContent(lang) {
+            document.documentElement.lang = lang;
+            const content = translations[lang];
+            
+            // Update document title
+            document.title = content.title;
+
+            // Update header links
+            document.querySelector('header a[href="#home"]').textContent = content.home;
+            document.querySelector('header a[href="#about"]').textContent = content.about;
+            document.querySelector('header a[href="#projects"]').textContent = content.projects;
+            document.querySelector('header a[href="#contact"]').textContent = content.contact;
+
+            // Update About section
+            document.getElementById('about').querySelector('h2').textContent = content.aboutTitle;
+            document.getElementById('about').querySelector('h3').textContent = content.name;
+            document.getElementById('about').querySelector('p:nth-of-type(1)').textContent = content.jobTitle;
+            document.getElementById('about').querySelector('p:nth-of-type(2)').textContent = content.aboutText;
+
+            // Update Projects section
+            document.getElementById('projects').querySelector('h2').textContent = content.projectsTitle;
+            document.getElementById('projects').querySelector('#project1-title').textContent = content.project1Title;
+            document.getElementById('projects').querySelector('#project1-desc').textContent = content.project1Desc;
+            document.getElementById('projects').querySelector('#project1-link').textContent = content.viewDetails;
+            document.getElementById('projects').querySelector('#project2-title').textContent = content.project2Title;
+            document.getElementById('projects').querySelector('#project2-desc').textContent = content.project2Desc;
+            document.getElementById('projects').querySelector('#project2-link').textContent = content.viewDetails;
+            document.getElementById('projects').querySelector('#project3-title').textContent = content.project3Title;
+            document.getElementById('projects').querySelector('#project3-desc').textContent = content.project3Desc;
+            document.getElementById('projects').querySelector('#project3-link').textContent = content.viewDetails;
+
+            // Update Contact section
+            document.getElementById('contact').querySelector('h2').textContent = content.contactTitle;
+            document.getElementById('contact').querySelector('p').textContent = content.contactText;
+            document.getElementById('contact').querySelector('a[href^="mailto:"] span').textContent = content.email;
+
+            // Update Footer
+            document.querySelector('footer p').textContent = content.footer;
+
+            // Update language switcher text
+            langText.textContent = lang === 'en' ? 'VI' : 'EN';
+        }
+
+        langSwitcher.addEventListener('click', () => {
+            currentLang = currentLang === 'en' ? 'vi' : 'en';
+            updateContent(currentLang);
+        });
+
+        // Initial content load
+        updateContent(currentLang);
+    </script>
+</body>
+</html>
